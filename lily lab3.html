@@ -14687,9 +14687,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <span class="c1"># Hyperparameters</span>
 <span class="n">RANDOM_SEED</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">LEARNING_RATE</span> <span class="o">=</span> <span class="mf">0.0005</span> <span class="c1"># adjust value from 0.001 to 0.0005</span>
-<span class="n">BATCH_SIZE</span> <span class="o">=</span> <span class="mi">64</span> <span class="c1"># adjust value from 128 to 64</span>
-<span class="n">NUM_EPOCHS</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># adjust value 10 to 20</span>
+<span class="n">LEARNING_RATE</span> <span class="o">=</span> <span class="mf">0.0005</span> <span class="c1"># reduce value from 0.001 to 0.0005</span>
+<span class="n">BATCH_SIZE</span> <span class="o">=</span> <span class="mi">64</span> <span class="c1"># reduce value from 128 to 64</span>
+<span class="n">NUM_EPOCHS</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># increase value from 10 to 30</span>
 
 <span class="c1"># Architecture</span>
 <span class="n">NUM_FEATURES</span> <span class="o">=</span> <span class="mi">32</span><span class="o">*</span><span class="mi">32</span>
@@ -15872,7 +15872,7 @@ class="
 In summary, using better normalization values and adding data augmentation techniques such as random cropping and horizontal flipping can help prevent overfitting in a neural network by increasing the diversity and size of the training dataset, and reducing the impact of differences in pixel intensity across images.</p>
 <h4 id="2.-Change-activation-function-and-use-regularization-technique(dropout),-accuracy-rate-increased-from-70%25-to-73%25">2. Change activation function and use regularization technique(dropout), accuracy rate increased from 70% to 73%<a class="anchor-link" href="#2.-Change-activation-function-and-use-regularization-technique(dropout),-accuracy-rate-increased-from-70%25-to-73%25">&#182;</a></h4><p>Changing activation function from tanh to relu and also using regularization technique by dropout. ReLU has a property known as sparsity, which means that many of the activations in the network are zero. This can help to prevent overfitting and improve the generalization performance of the network. Dropout is a regularization technique commonly used in deep neural networks to prevent overfitting.</p>
 <h4 id="3.-Adjust-Hyperparameters-of-learning-rate,-batch-size-and-number-of-epochs,-accuracy-rate-increased-from-73%25-to-79%25">3. Adjust Hyperparameters of learning rate, batch size and number of epochs, accuracy rate increased from 73% to 79%<a class="anchor-link" href="#3.-Adjust-Hyperparameters-of-learning-rate,-batch-size-and-number-of-epochs,-accuracy-rate-increased-from-73%25-to-79%25">&#182;</a></h4><p>Reducing learning rate from 0.001 to 0.0005: a smaller learning rate can help the network converge to a better solution by allowing it to more carefully explore the space of possible weight configurations.<br>
-Reducing batch size from 128 to 32: a smaller batch size can help prevent overfitting by reducing the amount of noise in the weight updates.<br>
+Reducing batch size from 128 to 64: a smaller batch size can help prevent overfitting by reducing the amount of noise in the weight updates.<br>
 Increasing number of epochs from 10 to 30: a small number of epochs may result in underfitting, where the network does not learn the patterns in the data well enough, therefore I increase the numeber of epochs.</p>
 
 </div>
